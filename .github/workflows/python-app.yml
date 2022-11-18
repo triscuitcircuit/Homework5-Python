@@ -14,9 +14,7 @@ permissions:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: [ubuntu-latest, macos-latest, windows-latest]
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -36,4 +34,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest test_basic_sort.py
