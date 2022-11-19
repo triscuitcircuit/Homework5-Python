@@ -18,13 +18,14 @@
 
 import pytest
 import numpy as np
+from sort.int_sort import bubble, quick, insertion
 
 
 def is_sorted(self, int_list):
     """
     Testing oracle. Tests if list is sorted
     """
-    if int_list.sort() == int_list:
+    if int_list.sort() == self:
         return True
     else:
         return False
@@ -37,12 +38,19 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-    assert True
+    for ch in int_lists:
+        assert is_sorted(bubble(ch), ch), "Bubble list not sorted"
 
 
 def test_quick(int_lists):
-    assert True
+    for list_to_check in int_lists:
+        assert is_sorted(
+            quick(list_to_check, -1, 0), list_to_check
+        ), "Quick sort list not sorted"
 
 
 def test_insertion(int_lists):
-    assert True
+    for list_to_check in int_lists:
+        assert is_sorted(
+            insertion(list_to_check), list_to_check
+        ), "Insertion list not sorted"
