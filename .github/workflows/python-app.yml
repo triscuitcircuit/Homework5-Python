@@ -42,5 +42,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: pytest-results-${{matrix.os}}
-        path: junit/test-results-${{matrix.os}}
+        path: junit/test-results-${{matrix.os}}.xml
       if: ${{ always() }}
