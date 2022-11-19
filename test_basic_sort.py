@@ -22,9 +22,12 @@ import numpy as np
 
 def is_sorted(self, int_list):
     """
-    Testing oracle.
+    Testing oracle. Tests if list is sorted
     """
-    return True
+    if int_list.sort() == int_list:
+        return True
+    else:
+        return False
 
 
 @pytest.fixture
