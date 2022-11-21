@@ -38,17 +38,18 @@ def bubble(int_list):
 
     for i in range(list_size):
         for j in range(0, list_size - i - 1):
-            if int_list[j] > int_list[j+1]:
+            if int_list[j] > int_list[j + 1]:
                 a_swap_occurred = True
                 temp = int_list[j]
-                int_list[j] = int_list[j+1]
-                int_list[j+1] = temp
+                int_list[j] = int_list[j + 1]
+                int_list[j + 1] = temp
 
         if not a_swap_occurred:
             # simply exit if no swaps were needed - it's already in order
             return
 
     print("bubble sort")
+
 
 def partition(int_list, left_index, right_index):
     """
@@ -73,19 +74,20 @@ def partition(int_list, left_index, right_index):
 
     for i in range(left_index, right_index):
         if int_list[i] <= pivot_point:
-            compare_ptr+=1
+            compare_ptr += 1
             temp = int_list[compare_ptr]
             int_list[compare_ptr] = int_list[i]
             int_list[i] = temp
 
-    temp = int_list[compare_ptr+1]
-    int_list[compare_ptr+1] = int_list[right_index]
+    temp = int_list[compare_ptr + 1]
+    int_list[compare_ptr + 1] = int_list[right_index]
     int_list[right_index] = temp
 
     partition_index = compare_ptr + 1
 
     return partition_index
-        
+
+
 def quick(int_list, left_index, right_index):
     """
     Args:
@@ -99,10 +101,11 @@ def quick(int_list, left_index, right_index):
     if left_index < right_index:
         partition_index = partition(int_list, left_index, right_index)
 
-        quick(int_list, left_index, partition_index - 1) # left of pivot
-        quick(int_list, partition_index + 1, right_index) # right of pivot
+        quick(int_list, left_index, partition_index - 1)  # left of pivot
+        quick(int_list, partition_index + 1, right_index)  # right of pivot
 
     print("quick sort")
+
 
 def insertion(int_list):
     """
@@ -122,7 +125,7 @@ def insertion(int_list):
 
         while current < int_list[j] and j >= 0:
             int_list[j + 1] = int_list[j]
-            j-=1
+            j -= 1
 
         int_list[j + 1] = current
 
