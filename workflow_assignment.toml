@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0",
+            "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workflow_assignment_LandonT"
+version = "0.0.1"
+authors = [{ name="Landon Thibodeau", email="landon.thibodeau@maine.edu" },
+           { name="Tristan Zippert", email="tristan.zippert@maine.edu" },
+            { name="David DiFrumolo", email="david.difrumolo@maine.edu" },
+            { name="Matthew Virgin", email="matthew.virgin@maine.edu" },
+            { name="Cedric Fahey", email="cedric.fahey@maine.edu" },
+]
+description = "An exercise in the capstone course"
+readme = "README.md"
+requires-python = ">=3.9.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/triscuitcircuit/Homework5-Python/issues"
+"Source Code" = "https://github.com/triscuitcircuit/Homework5-Python"

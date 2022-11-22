@@ -18,7 +18,7 @@
 
 import pytest
 import numpy as np
-from sort.int_sort import bubble, quick, insertion
+from workflow_testing_LandonT.int_sort import bubble, quick, insertion
 
 
 def is_sorted(self, int_list):
