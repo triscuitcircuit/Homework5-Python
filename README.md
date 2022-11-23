@@ -18,3 +18,11 @@ The pre-commit file checks style, credentials, large files, and lints before com
 The file Work flow Events in the repository shows the events and
 runners that are used. The image J1 shows the Jobs for all of the
 events.
+
+Work flow Events:
+
+![Devops image](https://github.com/triscuitcircuit/Homework5-Python/blob/main/Work%20flow%20Events.PNG)
+
+J1:
+
+![Devops image](https://github.com/triscuitcircuit/Homework5-Python/blob/main/J1.PNG)
