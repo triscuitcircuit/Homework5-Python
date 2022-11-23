@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "workflow_testing_LandonT"
-version = "0.0.3"
+version = "0.0.4"
 authors = [{ name="Landon Thibodeau", email="landon.thibodeau@maine.edu" },
            { name="Tristan Zippert", email="tristan.zippert@maine.edu" },
             { name="David DiFrumolo", email="david.difrumolo@maine.edu" },
